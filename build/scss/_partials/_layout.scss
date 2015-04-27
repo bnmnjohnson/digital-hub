@@ -1,0 +1,28 @@
+
+//container widths
+$fullWidth: 960px;
+$halfWidth: 480px;
+$quarterWidth: 240px;
+
+.container {
+	// border: 1px solid red;
+	width: inherit;
+	// max-width: $fullWidth;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+	animation: fadeIn 1s;
+}
+
+
+section {
+	display: block;
+	height: 200px;
+	animation: fadeIn 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

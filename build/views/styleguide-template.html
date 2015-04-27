@@ -1,0 +1,29 @@
+<dl class="sub-nav">
+  <dt>{{brand.name}} Identity Guidlines:</dt>
+  <dd class="active"><a ng-click="scrollTo('typography')">Typography</a></dd>
+  <dd><a ng-click="scrollTo('logo')">Logo</a></dd>
+  <dd><a ng-click="scrollTo('colours')">Colours</a></dd>
+  <dd><a ng-click="scrollTo('imagery')"> Imagery </a></dd>
+</dl>
+
+<!-- Colour, Typography, Links, Buttons, Icons, Graphical elements -->
+
+<!-- Begin Brand Values -->
+<div id="section-brand-values">
+    <div ng-repeat="value in brand.values">
+        <h1> {{value.title}} </h1>
+        <p> {{value.description}} </p>
+    </div>
+</div>
+<!-- End Brand Values -->
+
+<div id="section-typography"></div>
+<div id="section-logo"></div>
+<div id="section-colours"></div>
+<div id="section-imagery"></div>
+
+
+
+
+
+</ul>

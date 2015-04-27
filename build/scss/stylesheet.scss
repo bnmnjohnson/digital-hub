@@ -1,0 +1,226 @@
+
+//imports here
+// @import '_partials/reset'; 
+// @import '_partials/fonts'; 
+// @import '_partials/layout'; 
+
+body {
+	background-color: #eee;
+	font-family: "freight-sans-pro",sans-serif;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "freight-sans-pro",sans-serif;
+}
+
+.top-bar-section ul li > a {
+	font-family: "freight-sans-pro",sans-serif;
+	font-size: 1.1rem;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	color: #000000;
+}
+
+.top-bar {
+		background: #ffffff;
+		z-index: 9999;
+}
+.top-bar, .top-bar-section li:not(.has-form) a:not(.button), .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
+	 height: 3.8125rem;
+  line-height: 3.8125rem;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+	  height: 3.8125rem;
+}
+
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+	color: #000000;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: #ffffff;
+	color: #000000;
+}
+
+.top-bar-section ul li {
+	background: #fff;
+}
+
+.top-bar-section .divider, .top-bar-section [role="separator"] {
+	border-top: 1px solid #fff;
+}
+#logo #bnm {
+  font-family: Arial Black;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+//navigation styles
+// .global-nav {
+// 	$nav-height: 60px;
+// 	display: block;
+// 	position:relative;
+// 	background-color: #fff;
+// 	border-bottom: 2px solid #f2f2f2;
+// 	height: $nav-height;
+// 	color: #222;
+// 	padding: {
+// 		left: 20px;
+// 		right: 20px;
+// 	}
+// 	& a{
+// 		color:inherit;
+// 		&:visited {
+// 			color: inherit;
+// 		}
+// 	}
+// 	& #logo {
+// 		display: inline-block;
+// 		font-size: 0.9rem;
+// 		line-height: $nav-height;
+// 		vertical-align: middle;
+// 		text-decoration: none;
+// 		& #bnm{
+// 			font:{
+// 				family: Arial Black;
+// 				size: 1.8rem;
+// 				weight: 800;
+// 			}
+// 		}
+// 	}
+// 	& .global-nav-links {
+// 		display: inline-block;
+// 		float: right;
+// 		line-height: $nav-height;
+// 		vertical-align: middle;
+// 		& ul {
+// 			& li {
+// 				float: left;
+// 				padding-left: 0.5rem;
+// 				padding-right: 0.5rem;
+// 				& a {
+// 					color: $link-color;
+// 					font-weight: 400;
+// 					text-decoration: none;
+// 					&:hover{
+// 						border-bottom: 1px dotted $link-color;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		@media screen and (max-width: 540px){
+// 			display: none;
+// 			// width: 100%;
+// 			// background-color: #222;
+// 			// line-height: 40px;
+// 			// & ul {
+// 			// 	& li {
+// 			// 		float: none;
+// 			// 		padding-left: 1.5rem;
+// 			// 		padding-right: 1.5rem;
+// 			// 	}
+// 			// }
+// 		}
+// 	}
+// }
+
+
+// .home-image-section {
+// 	display: block;
+// 	height: 400px;
+// 	background-color: #f8f8f8;
+// 	//temp styles
+// 	// line-height:400px;
+// 	vertical-align:middle;
+// 	text-align: center;
+// 	margin-bottom: 40px;
+// 	overflow: hidden;
+// 	background:{
+// 		// image: url("http://cdn1.bestpsdfreebies.com/wp-content/uploads/2014/05/shards_pattern.jpg");
+// 		size: cover;
+// 		position: center;
+// 	}
+// 	transition: height 0.8s;
+// 	line-height: 400px;
+// 	& img {
+// 			height: 200px;
+// 			width: auto;
+// 		}
+// 	@media screen and(max-width: 960px){
+// 		height: 300px;
+// 		margin-bottom: 20px;
+// 	}
+// 	@media screen and(max-width: 540px){
+// 		height: 200px;
+// 		// margin-bottom: 20px;
+// 	}
+// }
+
+.text-container {
+		max-width: 600px
+	}
+
+.brand-tile-container {
+	display: block;
+}
+
+
+
+.brand-tile {
+	display: block;
+	float: left;
+	width: 30%;
+	height: 150px;
+	margin: 1%;
+	padding: 40px;
+	background: {
+		color: #fff;
+		size:cover;
+		position:center;
+	}
+
+	border-radius: 3px;
+	border: 4px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+	vertical-align:top;
+	transform: perspective(400) rotateY(0deg);
+	transition: all 0.3s;
+	&:hover {
+		transform: perspective(400) rotateY(6deg);
+		box-shadow: -5px 0px 10px #777;
+	}
+
+	& p {
+		font-size: 2rem;
+		position: absolute;
+		bottom: 40;
+		right: 40;
+	}
+}
+
+
+
+// button {
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	margin: 4px;
+// 	font-size: 0.9rem;
+// 	cursor: pointer;
+// 	background: none;
+// 	border: 2px solid #222;
+// 	&:hover{
+// 		background: #222;
+// 		color: #fff;
+// 	}
+// }
+
+
+
+

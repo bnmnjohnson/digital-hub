@@ -1,0 +1,55 @@
+/* Define custom fonts and import Google fonts */
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+@font-face {
+	font-family: LFT Etica Display Heavy;
+	font-weight: 700;
+	src: url('http://creative.brandnewmedia.global/bnm/digital_hub/src/assets/fonts/LFTEticaDisplay-Heavy.woff');
+	/* This url is yet to be confirmed */
+}
+
+/* Setup browser defaults */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Source Sans Pro, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}	
+
+strong {
+	font-weight: 600;
+}
+
+/* Default link style */
+a {
+	color: #F47A28;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 2px solid #F47A28;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/* Blockquote styling */
+blockquote {
+	display: block;
+	background-color: #eee;
+	border-left: 10px solid #F47A28;
+	margin:20px;
+	padding: 15px;
+}
+
+li {
+	margin-left: 1.2rem;
+}

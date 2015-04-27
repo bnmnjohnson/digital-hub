@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html ng-app="bnm-styleguide">
+<head>
+	<title>BNM_Styleguide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link href="src/css/prism.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/css/bnm_styleguide.css">
+	<script type="text/javascript" src="src/js/prism.js"></script>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="src/js/lib/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="src/js/lib/angular/angular.js"></script>
+	<script type="text/javascript" src="src/js/lib/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="src/js/bnm-styleguide.js"></script>
+	
+
+</head>
+<body ng-controller="main-controller">
+
+
+<section id="hero">
+	<div class="content">
+		<div class="hero-text-container">
+			<h1 style="font-family: LFT Etica Display Heavy">Brand New Media</h1> 
+			<h2>Branding Guidelines | Digital Edition</h2>
+			<div class="glyph"><h2 style="font-family: LFT Etica Display Heavy">Aa</h2></div>
+		</div>
+	
+		<div class="cheveron-container" id="chev">
+			<a href="#our-brand"><i class="fa fa-angle-down"></i></a>
+			</div>
+	</div>
+</section>
+
+
+<section id="our-brand">
+	<a name="#our-brand"></a>
+	<div class="content">
+		<h1>Brand Values</h1>
+	</div>
+</section>
+
+
+<section id="logo">
+	<div class="content">
+		<div class="right-content-container">
+			<div class="paragraph-container">
+			<h2>Leading Logo</h2>
+			<img src="src/assets/bnm/MASTER-BNM-rgb-smart.png" width="50%">
+			</div>
+		</div>
+
+
+
+	</div>
+</section>
+
+<section id="typography">
+	<div class="content">
+<!-- 		<nav class="inline-nav">
+			<ul>
+				<li><a ng-Click="selected('Typography')" ng-style="isSelectedTypeTab('Typography')" href="">Typography</a></li>
+				<li><a ng-Click="selected('Heading Style')" ng-style="isSelectedTypeTab('Heading Style')" href="">Heading Style</a></li>
+				<li><a ng-Click="selected('Body Style')" ng-style="isSelectedTypeTab('Body Style')" href="">Body Style</a></li>
+				<li><a ng-Click="selected('Usage')" ng-style="isSelectedTypeTab('Usage')" href="">Optimisation</a></li>
+				<li><a ng-Click="selected('Download')" ng-style="isSelectedTypeTab('Download')" href="">Download</a></li>
+			</ul>
+		</nav> -->
+
+<div class="right-content-container" ng-if="selectedTypeTab !== 'Heading Style'">
+		<div class="paragraph-container">
+			<h3>Using Our Fonts</h3>
+			<p>To ensure continuity accross our branded assests, we have made our fonts avaliable as css imports for web, and downloadable for print and presentation use. Include the following snipped in your CSS or <a href="src/assets/font-pack/font-pack.zip" download="font-pack.zip">download the font package</a> to use them in your project.</p><br/>		
+<pre>
+<code class="language-css">
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+
+@font-face {
+	font-family: LFT Etica Display Heavy;
+	font-weight: 700;
+	src: url('http://creative.brandnewmedia.global/src/assets/fonts/LFTEticaDisplay-Heavy.woff');
+	/* This url is yet to be confirmed */
+}</code>
+</pre>
+
+			</div>		
+		</div>
+
+	<div class="right-content-container" ng-if="selectedTypeTab !== 'Heading Style'">
+		<div class="paragraph-container">
+			<h3>Headings</h3>
+			<h1 style="font-family: Dock11">DOCK11 HEADER</h1>
+			<h1 style="font-family: LFT Etica Display Heavy">LFT ETICA HEADING</h1><br/>
+			<p>The heading style is can be either DOCK11 or LFT Etica Display Heavy with all characters in uppercase and slight letter-spacing. The heading style can be treated with an orange to yellow gradient from left to right when created in photoshop and used as an image. The prefered treatment for web is a solid orange or grey colour.</p> <br/><p>The LFT Etica Display typeface is designed for mixed print and web use. It contains uppercase, lowercase, and special characters. LFT Etica Display Heavy is comercially licensed by Brand New Media for print use only. Any use of this font online is licensed though Adobe TypeKit and must be attributed to Adobe as per their EULA.</p><br/>		
+<pre>
+<code class="language-css">
+h1 {
+	font-family: Dock11, LFT Etica Display Heavy, Arial Black, Sans-Serif;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}</code>
+</pre>
+
+			</div>		
+		</div>
+
+
+		<div class="right-content-container" ng-if="selectedTypeTab !== 'Body Style'">
+			<div class="paragraph-container">
+				<h3>Source Sans Pro Regular</h3>
+				<p>Our body typeface is Source Sans Pro Regular, it is designed for mixed digital and print use and includes uppercase, lowercase, and special characters. We're using it here as a demonstration of how it should look as body copy. On web it should be used at 15px with a line-height of 1.4rem. For print this is 12pt with 17pt leading. The ratio of point size to leading/line-height is 1:1.4. </p> <br/><p>The recommended weight is 400 (regular), with strong elements in 600 (semi-bold). When used in print or in text larger than 15px the weight may drop to 300 (light). The typeface is freeware and licensed through Google fonts for commercial use. </p>
+				<br/>
+				
+<pre>
+<code class="language-css">
+p {
+	font-family: Source Sans Pro, Arial, Sans-Serif;
+	font-weight: 400;
+	letter-spacing: 0.01rem;
+	line-height: 1.4rem;
+}</code>
+</pre>
+			</div>	
+		</div>
+
+		<div class="right-content-container" ng-if="selectedTypeTab !== 'Usage'">
+			<div class="paragraph-container">
+			<h3>Optimising for Web</h3>
+			<p>A lot goes into perfect typography for web. To setup the body, declare the font-size to 15px, and line-height to 21px and enable font smoothing for webkit browsers. On retina devices we can drop the font-weight to 300.</p>
+			<br/>
+<pre>
+<code class="language-css">
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Source Sans Pro, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	p, a {
+		font-weight: 300;
+	}
+}</code></pre>
+			</div>
+		</div>
+
+		
+		<!-- <div class="right-content-container" ng-if="selectedTypeTab !== 'Download'">
+			<div class="paragraph-container">
+				<h3>BNM CSS Boilerplate</h3>
+				<p>To quickly get started </p><br/>
+				<p><a href="src/assets/bnm/bnm_boilerplate.css" download="bnm_boilerplate.css"><i class="fa fa-download"></i> Download Boilerplate</a></p>
+				<p>Last updated: March 2015</p>
+			</div>
+		</div> -->
+	</div>
+</section>
+
+
+<!-- END TYPOGRAPHY -->
+
+
+
+<section id="colors">
+	<div class="content">
+	<div class="palette-container">
+		<div class="swatch-container" ng-repeat="color in primaryColors">
+			<div class="swatch" ng-style="{'background-color': color.hex }"></div>
+				<div class="values">
+					<h3>{{color.name}}</h3>
+					<p>HEX: {{color.hex}}</p>
+					<p>RGB: {{color.rgb}}</p>
+					<p>Pantone: {{color.pms}}</p>
+					<p>CMYK: {{color.cmyk}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="colors">
+	<div class="content">
+	<div class="palette-container">
+		<div class="swatch-container" ng-repeat="color in secondaryColors">
+			<div class="swatch" ng-style="{'background-color': color.hex }"></div>
+				<div class="values">
+					<h3>{{color.name}}</h3>
+					<p>HEX: {{color.hex}}</p>
+					<p>RGB: {{color.rgb}}</p>
+					<p>Pantone: {{color.pms}}</p>
+					<p>CMYK: {{color.cmyk}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="photography">
+	<div class="content">
+		<h1>Photography</h1>
+	</div>
+</section>
+
+<!-- SMOOTH SCROLLING -->
+<script type="text/javascript">
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+</body>
+</html>

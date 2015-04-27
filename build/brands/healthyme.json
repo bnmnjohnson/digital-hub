@@ -1,0 +1,20 @@
+{
+    "id": "healthyme",
+    "name": "Healthy Me",
+    "description": "Sample Description",
+    "lastUpdated": "March 2015",
+    "developedBy": "Brand New Media",
+    "values": [
+            {
+            "title": "value title 1",
+            "description": "value description 1"
+            },
+            {
+            "title": "value title 2",
+            "description": "value description 2"
+            }    
+        ]
+
+
+}
+

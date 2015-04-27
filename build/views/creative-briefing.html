@@ -1,0 +1,22 @@
+<center>
+<br/>
+<button ng-click="brief = 'creativeBrief' ">+ Creative Brief</button>
+<button ng-click="brief = 'campaignBrief' ">+ Campaign Brief</button>
+<button ng-click="brief = 'projectBrief' ">+ Project Brief</button>
+<br/><br/><br/>
+
+<div class="iframe" ng-if="brief == 'campaignBrief'">
+	<div ng-include=" 'Marketing-Campaign-Brief-form.html' "></div>
+</div>
+
+<div class="iframe" ng-if="brief == 'creativeBrief'">
+	<div ng-include=" 'creative-brief-form.html' "></div>
+</div>
+
+<div class="iframe" ng-if="brief == 'projectBrief' ">
+	<div ng-include=" 'project-brief-form.html' "></div>
+</div>
+
+</center>
+
+

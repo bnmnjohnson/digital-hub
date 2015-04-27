@@ -1,0 +1,292 @@
+
+      <!-- CSS -->
+<!--       <link href="src/css/structure.css" rel="stylesheet"> -->
+      <link href="src/css/form.css" rel="stylesheet">
+  <div class="row">
+        <div class="large-8 columns">
+      <div id="container" class="ltr">
+         <form id="form3" name="form3" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+            action="https://bnmnjohnson.wufoo.com/forms/q15hde5m1a6i603/#public">
+            <header id="header" class="info">
+               <h2>Creative Brief Form</h2>
+<!--                <div>This is my form. Please fill it out. It's awesome!</div> -->
+            </header>
+            <ul>
+               <li id="foli1" class="notranslate hidden     ">
+                  <label class="desc" id="title1" for="Field1">
+                  Task Name
+                  </label>
+                  <div>
+                     <input id="Field1" name="Field1" type="text" class="field text medium" value="{{selectedRegion}}+{{selectedChannel}}" maxlength="30" tabindex="1" onkeyup="validateRange(1, 'character');"       />
+<!--                      <label for="Field1">Maximum Allowed: <var id="rangeMaxMsg1">30</var> characters.&nbsp;&nbsp;&nbsp; <em class="currently">Currently Used: <var id="rangeUsedMsg1">0</var> characters.</em></label> -->
+                  </div>
+               </li>
+               <li id="foli3" class="notranslate       ">
+                  <label class="desc" id="title3" for="Field3">
+                  Region
+                  <span id="req_3" class="req">*</span>
+                  </label>
+                  <div>
+
+                     <select id="Field3" name="Field3" class="field select medium" tabindex="2" ng-model="selectedRegion">
+                        <option value="" selected="selected"></option>
+                        <option value="Australia" >
+                           Australia
+                        </option>
+                        <option value="Singapore" >
+                           Singapore
+                        </option>
+                        <option value="United States" >
+                           United States
+                        </option>
+                        <option value="Philippines" >
+                           Philippines
+                        </option>
+                     </select>
+                  </div>
+               </li>
+
+               <p>selected region is : {{selectedRegion}}</p>
+              
+
+               <li id="foli5" class="notranslate       ">
+                  <label class="desc" id="title5" for="Field5">
+                  Channel
+                  <span id="req_5" class="req">*</span>
+                  </label>
+                  <div ng-if=" selectedRegion=='Australia' || selectedRegion=='Singapore' || selectedRegion=='Philippines' || selectedRegion=='United States' " >
+                  <p>selected channel is : {{selectedChannel}}</p>
+                     <select id="Field5" name="Field5" class="field select medium" tabindex="3" ng-model="selectedChannel">
+                        <option value="" selected="selected"></option>
+                        <option value="4ME" ng-if=" selectedRegion=='Australia' || selectedRegion=='Singapore' || selectedRegion=='Philippines'" >
+                           4ME
+                        </option>
+                        <option value="Brand New Media" hideon="australia" >
+                           Brand New Media
+                        </option>
+                        <option value="food for life tv" ng-if=" selectedRegion=='Australia' || selectedRegion=='Singapore' || selectedRegion=='Philippines'" >
+                           food for life tv
+                        </option>
+                        <option value="Healthy ME" ng-if=" selectedRegion=='Australia' || selectedRegion=='Singapore' || selectedRegion=='Philippines'" >
+                           Healthy ME
+                        </option>
+                        <option value="i-do.com.au" ng-if=" selectedRegion=='Australia' " >
+                           i-do.com.au
+                        </option>
+                        <option value="mySURF.tv" ng-if=" selectedRegion=='Australia' " >
+                           mySURF.tv
+                        </option>
+                        <option value="PSYCHIC TV" ng-if=" selectedRegion=='Australia' " >
+                           PSYCHIC TV
+                        </option>
+                        <option value="Thrive" ng-if=" selectedRegion=='Australia' " >
+                           Thrive
+                        </option>
+                        <option value="Wine Vine" ng-if=" selectedRegion=='Australia' " >
+                           Wine Vine
+                        </option>
+                        <option value="Sales Response*" >
+                           Sales Response*
+                        </option>
+                        <option value="History PLUS" ng-if=" selectedRegion=='Singapore' " >
+                           History PLUS
+                        </option>
+                        <option value="Clozette TV" ng-if=" selectedRegion=='Singapore' " >
+                           Clozette TV
+                        </option>
+                        <option value="M Style" ng-if=" selectedRegion=='Singapore' " >
+                           M Style
+                        </option>
+                        <option value="Outdoor Channel" ng-if=" selectedRegion=='Singapore' || selectedRegion=='Philippines'" >
+                           Outdoor Channel
+                        </option>
+                        <option value="Escape TV" ng-if=" selectedRegion=='Singapore' " >
+                           Escape TV
+                        </option>
+                     </select>
+                  </div>
+                  <p class="instruct" id="instruct5"><div>*This covers all collateral related to pitches, proposals and so on, particularly with requests being received from the Response Team. <br />
+                     </div>
+                  </p>
+               </li>
+               <li id="foli110"
+                  class="notranslate      ">
+                  <label class="desc" id="title110" for="Field110">
+                  Task Summary and Objectives
+                  <span id="req_110" class="req">*</span>
+                  </label>
+                  <div>
+                     <textarea id="Field110"
+                        name="Field110"
+                        class="field textarea medium"
+                        spellcheck="true"
+                        rows="10" cols="50"
+                        tabindex="4"
+                        onkeyup=""
+                        required  ></textarea>
+                  </div>
+                  <p class="instruct" id="instruct110"><div>What are you trying to achieve with this creative? What is the overall aim of this task and are there any creative considerations you'd like to mention?</div></p>
+               </li>
+               <li id="foli111" class="notranslate      ">
+                  <fieldset>
+                     <![if !IE | (gte IE 8)]>
+                     <legend id="title111" class="desc">
+                        Deliverables
+                        <span id="req_111" class="req">*</span>
+                     </legend>
+                     <![endif]>
+                     <!--[if lt IE 8]>
+                     <label id="title111" class="desc">
+                     Deliverables
+                     <span id="req_111" class="req">*</span>
+                     </label>
+                     <![endif]-->
+                     <div>
+                        <div>
+                        <input id="Field111" name="Field111" type="checkbox" class="field checkbox" value="PowerPoint" tabindex="5"     />
+                        <label class="choice" for="Field111">PowerPoint</label>
+                        </div>
+                        <div>
+                        <input id="Field112" name="Field112" type="checkbox" class="field checkbox" value="Infographic" tabindex="6"     />
+                        <label class="choice" for="Field112">Infographic</label>
+                        </div>
+                        <div>
+                        <input id="Field113" name="Field113" type="checkbox" class="field checkbox" value="eDM" tabindex="7"     />
+                        <label class="choice" for="Field113">eDM</label>
+                        </div>
+                        <div>
+                        <input id="Field114" name="Field114" type="checkbox" class="field checkbox" value="Facebook Cover" tabindex="8"     />
+                        <label class="choice" for="Field114">Facebook Cover</label>
+                        </div>
+                        <div>
+                        <input id="Field115" name="Field115" type="checkbox" class="field checkbox" value="Twitter Header" tabindex="9"     />
+                        <label class="choice" for="Field115">Twitter Header</label>
+                        <div>
+                        <div>
+                        <input id="Field116" name="Field116" type="checkbox" class="field checkbox" value="YouTube Skin" tabindex="10"     />
+                        <label class="choice" for="Field116">YouTube Skin</label>
+                        </div>
+                        <div>
+                        <input id="Field117" name="Field117" type="checkbox" class="field checkbox" value="LinkedIn Header" tabindex="11"     />
+                        <label class="choice" for="Field117">LinkedIn Header</label>
+                        </div>
+                        <div>
+                        <input id="Field118" name="Field118" type="checkbox" class="field checkbox" value="Social Object" tabindex="12"     />
+                        <label class="choice" for="Field118">Social Object</label>
+                        </div>
+                        <div>
+                        <input id="Field119" name="Field119" type="checkbox" class="field checkbox" value="channelPLAY Skin Mock" tabindex="13"     />
+                        <label class="choice" for="Field119">channelPLAY Skin Mock</label>
+                        </div>
+                        <div>
+                        <input id="Field120" name="Field120" type="checkbox" class="field checkbox" value="Other" tabindex="14" ng-model="checked" ng-init="checked=false"/>
+                        <label class="choice" for="Field120">Other</label>
+                        </div>
+                     </div>
+                  </fieldset>
+                  <p class="instruct" id="instruct111"><div>What needs to be created and delivered for this task?</div></p>
+               </li>
+
+               <li id="foli318" class="notranslate      " ng-if="checked">
+                  <label class="desc" id="title318" for="Field318">
+                  Other
+                  </label>
+                  <div>
+                     <input id="Field318" name="Field318" type="text" class="field text medium" value="" maxlength="255" tabindex="15" onkeyup=""       />
+                  </div>
+               </li>
+
+               <li id="foli313"
+                  class="notranslate      ">
+                  <label class="desc" id="title313" for="Field313">
+                  Copy
+                  <span id="req_313" class="req">*</span>
+                  </label>
+                  <div>
+                     <textarea id="Field313"
+                        name="Field313"
+                        class="field textarea medium"
+                        spellcheck="true"
+                        rows="10" cols="50"
+                        tabindex="16"
+                        onkeyup=""
+                        required  ></textarea>
+                  </div>
+                  <p class="instruct" id="instruct313"><div>Will the creative need to feature any copy, if so please specify the approved version in the field below. </div></p>
+               </li>
+               <li id="foli314"
+                  class="notranslate      ">
+                  <label class="desc" id="title314" for="Field314">
+                  Material Specifications
+                  </label>
+                  <div>
+                     <textarea id="Field314"
+                        name="Field314"
+                        class="field textarea medium"
+                        spellcheck="true"
+                        rows="10" cols="50"
+                        tabindex="17"
+                        onkeyup=""
+                        ></textarea>
+                  </div>
+                  <p class="instruct" id="instruct314"><div>Please specify with as much detail below, i.e. FB Cover is 851px wide & 315px tall</div></p>
+               </li>
+               <li id="foli315" class="date eurodate notranslate      ">
+                  <label class="desc" id="title315" for="Field315">
+                  Due Date
+                  </label>
+                  <span>
+                  <input id="Field315-1" name="Field315-1" type="text" class="field text" value="29" size="2" maxlength="2" tabindex="18"       />
+                  <label for="Field315-1">DD</label>
+                  </span>
+                  <span class="symbol">/</span>
+                  <span>
+                  <input id="Field315-2" name="Field315-2" type="text" class="field text" value="04" size="2" maxlength="2" tabindex="19" />
+                  <label for="Field315-2">MM</label>
+                  </span>
+                  <span class="symbol">/</span>
+                  <span>
+                  <input id="Field315" name="Field315" type="text" class="field text" value="2015" size="4" maxlength="4" tabindex="20" />
+                  <label for="Field315">YYYY</label>
+                  </span>
+                  <span id="cal315">
+                  <img id="pick315" class="datepicker" src="images/calendar.png" alt="Pick a date." data-date="2015-29-04" data-date-format="yyyy-dd-mm"/>
+                  </span>
+                  <p class="instruct" id="instruct315"><div>A minimum of 48 hours for delivery is required after the briefing date.</div></p>
+               </li>
+               <li id="foli316" class="notranslate      ">
+                  <label class="desc" id="title316" for="Field316">
+                  Briefed by
+                  <span id="req_316" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="Field316" name="Field316" type="text" class="field text medium" value="" maxlength="255" tabindex="21" onkeyup=""       required />
+                  </div>
+                  <p class="instruct" id="instruct316"><div>Your name or email address, or the key contact for this task</div></p>
+               </li>
+               <li class="buttons ">
+                  <div>
+                     <input id="saveForm" name="saveForm" class="btTxt submit"
+                        type="submit" value="Submit"
+                        />
+                  </div>
+               </li>
+               <li class="hide">
+                  <label for="comment">Do Not Fill This Out</label>
+                  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                  <input type="hidden" id="idstamp" name="idstamp" value="huda0xR0w3aPelKa2DBBEBcaSVwpqD5uBuJ7P2FNy5w=" />
+               </li>
+            </ul>
+         </form>
+      </div>
+      <!--container-->
+      <a class="powertiny" href="http://www.wufoo.com/" title="Powered by Wufoo"
+         style="display:block !important;visibility:visible !important;text-indent:0 !important;position:relative !important;height:auto !important;width:95px !important;overflow:visible !important;text-decoration:none;cursor:pointer !important;margin:0 auto !important">
+      <span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important">Wufoo</span>
+      <b style="display:block !important;visibility:visible !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:#777;padding:0 0 0 3px;">Designed</b>
+      </a>
+
+
+
+   </body>
+</html>
